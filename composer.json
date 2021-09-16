@@ -33,7 +33,7 @@
     },
     "extra": {
         "name": "Pin Payments",
-        "handle": "pin-payments",
+        "handle": "pinpayments",
         "developer": "Cloud Gray Pty Ltd",
         "developerUrl": "https://cloudgray.com.au/",
         "documentationUrl": "https://github.com/cloudgrayau/pinpayments/blob/main/README.md",
