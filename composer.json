@@ -1,0 +1,43 @@
+{
+    "name": "cloudgrayau/pinpayments",
+    "description": "Pin Payments for Craft Commerce",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "pin payments"
+    ],
+    "support": {
+        "docs": "https://github.com/cloudgrayau/pinpayments/blob/main/README.md",
+        "issues": "https://github.com/cloudgrayau/pinpayments/issues"
+    },
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Cloud Gray Pty Ltd",
+            "homepage": "https://cloudgray.com.au/"
+        }
+    ],
+    "require": {
+      "craftcms/cms": "^3.0.0",
+      "craftcms/commerce": "^3.0",
+      "guzzlehttp/guzzle": "^7.0",
+    },
+    "autoload": {
+        "psr-4": {
+          "cloudgrayau\\pinpayments\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Pin Payments",
+        "handle": "pin-payments",
+        "developer": "Cloud Gray Pty Ltd",
+        "developerUrl": "https://cloudgray.com.au/",
+        "documentationUrl": "https://github.com/cloudgrayau/pinpayments/blob/main/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/cloudgrayau/pinpayments/main/CHANGELOG.md",
+        "class": "cloudgrayau\\pinpayments\\PinPayments"
+    }
+}
