@@ -1,0 +1,3 @@
+<div id="pinpayments" data-key="{{ parseEnv(gateway.publishableKey) }}"{% if (gateway.pinJs) %} class="pinjs"{% endif %}>
+    {% include 'commerce/_components/gateways/_creditCardFields' %}
+</div>

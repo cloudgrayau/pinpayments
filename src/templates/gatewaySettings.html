@@ -1,0 +1,31 @@
+{% from "_includes/forms" import textField, lightswitchField, autosuggestField %}
+
+{{ autosuggestField({
+    label: "Publishable API Key"|t('pinpayments'),
+    instructions: "Your publishable Pin Payments API key."|t('pinpayments'),
+    id: 'publishableKey',
+    class: 'ltr',
+    name: 'publishableKey',
+    suggestEnvVars: true,
+    value: gateway.publishableKey,
+    errors: gateway.getErrors('publishableKey')
+}) }}
+
+{{ autosuggestField({
+    label: "Secret API Key"|t('pinpayments'),
+    instructions: "Your Pin Payments API key."|t('pinpayments'),
+    id: 'apiKey',
+    class: 'ltr',
+    name: 'apiKey',
+    suggestEnvVars: true,
+    value: gateway.apiKey,
+    errors: gateway.getErrors('apiKey')
+}) }}
+
+ {{ lightswitchField({
+     label: "Use Pin.js?"|t('commerce'),
+     instructions: "Pin.js adds additional security to your websites and applications, and reduces your PCI compliance obligations."|t('pinpayments'),
+     name: 'pinJs',
+     on: gateway.pinJs,
+     errors: gateway.getErrors('pinJs'),
+ }) }}
